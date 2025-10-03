@@ -13,7 +13,7 @@
 <em>Built with the tools and technologies:</em>
 
 <img src="https://img.shields.io/badge/JSON-000000.svg?style=default&logo=JSON&logoColor=white" alt="JSON">
-
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
 </div>
 <br>
 
