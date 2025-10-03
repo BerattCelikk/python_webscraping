@@ -3,8 +3,6 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
 # PYTHON_WEBSCRAPING
 
 <em></em>
@@ -35,20 +33,23 @@
     - [Testing](#testing)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
 
 ## Overview
+This project is a Python-based web scraping tool that collects tourist attractions from Wikipedia categories and stores them in a structured JSON file. It demonstrates web scraping, HTML parsing, and JSON data management.
 
 
 
 ---
 
 ## Features
-
-<code>❯ REPLACE-ME</code>
+- Scrapes multiple categories of tourist attractions from Wikipedia.
+- Extracts name, city, description, and geographic coordinates.
+- Stores results in a structured JSON file.
+- Handles missing or inconsistent data gracefully.
+- Can be extended to include more categories or data points.
 
 ---
 
@@ -56,8 +57,8 @@
 
 ```sh
 └── python_webscraping/
-    ├── attractions.json
-    └── main.ipynb
+    ├── attractions.json      # Scraped data stored in JSON
+    └── main.ipynb            # Jupyter Notebook with scraping code
 ```
 
 ### Project Index
@@ -95,10 +96,9 @@
 ## Getting Started
 
 ### Prerequisites
-
-This project requires the following dependencies:
-
-- **Programming Language:** JupyterNotebook
+- **Python 3.x**
+- **Jupyter Notebook**
+- **Libraries: `requests`, `beautifulsoup4`, `json`, `time`**
 
 ### Installation
 
@@ -107,7 +107,7 @@ Build python_webscraping from the source and intsall dependencies:
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone ../python_webscraping
+    ❯ git clone https://github.com/BerattCelikk/python_webscraping.git
     ```
 
 2. **Navigate to the project directory:**
@@ -118,27 +118,29 @@ Build python_webscraping from the source and intsall dependencies:
 
 3. **Install the dependencies:**
 
-echo 'INSERT-INSTALL-COMMAND-HERE'
+    ```sh
+    ❯ pip install requests beautifulsoup4
+    ```
 
 ### Usage
 
-Run the project with:
-
-echo 'INSERT-RUN-COMMAND-HERE'
+Run the project by opening the `main.ipynb` notebook in Jupyter and executing the cells.  
+Alternatively, you can run it as a Python script:
 
 ### Testing
 
-Python_webscraping uses the {__test_framework__} test framework. Run the test suite with:
+There is currently no automated test framework.  
+To test the project, run the `main.ipynb` notebook in Jupyter and check that `attractions.json` is populated correctly with valid entries.
 
-echo 'INSERT-TEST-COMMAND-HERE'
 
 ---
 
 ## Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [ ] **Scrape predefined Wikipedia categories** – basic scraping working.  
+- [ ] **Add more categories or user input** – allow users to specify categories to scrape.  
+- [ ] **Improve error handling and logging** – make scraping more robust.  
+- [ ] **Add automated data validation tests** – ensure JSON output is correct.
 
 ---
 
@@ -185,11 +187,6 @@ echo 'INSERT-TEST-COMMAND-HERE'
 
 ---
 
-## License
-
-Python_webscraping is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
 
 ## Acknowledgments
 
